@@ -2,6 +2,7 @@
 
 :root {
     --color-pink: #ca2189;
+    --color-lilac: #7159c1;
 }
 * {
     margin: 0;
@@ -67,3 +68,28 @@ header {
 #links-food a{
     border-bottom: 1px solid var(--color-pink);
 }
+
+/*=== CARDS ===*/
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.card {
+    background-color: var(--color-lilac);
+}
+.card_image img {
+    width: 100%;
+}
+.card_content,
+.card_info {
+    padding:24px;
+}
+.card_info {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
+.card_price{
+   background-color: var(--color-lilac);
+   filter:brightness(90%);
+}    
